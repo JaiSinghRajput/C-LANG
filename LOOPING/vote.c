@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <conio.h>
-void main()
+int main()
 {
     int i, x = 0, y = 0;
     char v;
@@ -8,7 +7,7 @@ void main()
     for (i = 0; i < 20; i++)
     {
         printf("vote number %d from 20 : ", i + 1);
-        scanf("%c", &v);
+        scanf("%c",&v);xur
 
         if (v == 'x' || v == 'X')
         {
@@ -28,5 +27,5 @@ void main()
     }
     printf("voter of x = %d\n", x);
     printf("voter of y = %d", y);
-    getch();
+    return 0;
 }

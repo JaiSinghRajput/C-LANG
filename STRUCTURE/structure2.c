@@ -16,16 +16,21 @@ struct student
 
 
 void main()
-
 { 
-    student{}s[5];
+    struct student s[5];
     int i;
     system("cls");
     printf("----------------------------------jai's projects----------------------------------\n please enter value carasponding students 1 to 5 :\n series -->\n ID \n Name \n branch \n marks ");
     for(i=0;i<=4; i++)
     {
-        printf("enter data for student %d",i+1);
+        printf("enter data for student %d : ",i+1);
         scanf("%d %s %s %f",s[i].ID,s[i].Name,s[i].branch,s[i].Marks);
+        
+    }
+    for(i=0;i<=4; i++)
+    {
+        printf("data of student %d",i+1);
+        printf("%d %s %s %f",s[i].ID,s[i].Name,s[i].branch,s[i].Marks);
         
     }
 
